@@ -12,14 +12,11 @@
         iosOverflowSafeArea="true"
       >
       </MapView>
-      
-      <AbsoluteLayout row="0">
-        <Switch
+      <Switch
         checked="true"
         class="switch"
         @loaded="loadSwitch"
       />
-    </AbsoluteLayout>
     </GridLayout>
   </Page>
 </template>
