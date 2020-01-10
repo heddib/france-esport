@@ -1,6 +1,6 @@
 # France Esport
 
-> A native application built with NativeScript-Vue
+> Rechercher facilement les événements esports autour de vous.
 
 ## Usage
 
@@ -21,3 +21,6 @@ tns debug <platform>
 tns build <platform> --env.production
 
 ```
+
+## Lien du dernier build Android
+> [Dernier build Android](https://test.heddib.fr/dl/franceesport.apk)
