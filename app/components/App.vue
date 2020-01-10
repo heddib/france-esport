@@ -124,18 +124,13 @@ export default {
         .then(getJson)
         .then(data => {
           let thedata = JSON.parse(data.content);
-          //console.log('Data: ' + JSON.stringify(thedata.data))
           this.addEvents(thedata.data);
-          // super.user = JSON.stringify(data.authdata)
         });
     },
 
     addEvents(events) {
       this.events = events;
-      //console.log('EVENTS : ' + JSON.stringify(this.events));
       this.events.forEach(event => {
-        //console.log(event.title);
-
         this.addMarker(event.title, event.description, event.lat, event.lng);
       });
     },
