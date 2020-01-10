@@ -1,6 +1,8 @@
 <template>
   <Page>
-    <ActionBar title="France Esport" />
+    <ActionBar title="France Esport">
+      <Switch checked="true" class="switch" @loaded="loadSwitch" />
+    </ActionBar>
     <GridLayout columns="*" rows="*">
       <MapView
         :latitude="latitude"
@@ -12,11 +14,6 @@
         iosOverflowSafeArea="true"
       >
       </MapView>
-      <Switch
-        checked="true"
-        class="switch"
-        @loaded="loadSwitch"
-      />
     </GridLayout>
   </Page>
 </template>
